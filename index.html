@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CG</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CSP204 - Chetna LAB - 1 Credit</label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CSP204"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CSP206 - DAA Lab - 1 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CSP206"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CSP208 - OS Lab - 1 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CSP208"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CST202 - SE - 3 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CST202"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CST204 - CAO - 3 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CST204"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CST206 - DAA - 3 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CST206"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CST208 - OS - 3 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CST208"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <div class="form-group m-3">
+        <label for="exampleInputEmail1">CST210 - ILFM - 3 Credit </label>
+        <input
+          type="text"
+          class="form-control m-3"
+          id="CST210"
+          aria-describedby="emailHelp"
+          placeholder="Enter Grade"
+        />
+      </div>
+      <button onclick="getCG()" type="submit" class="btn btn-primary m-5">
+        Get CG
+      </button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const unit = {
+        AA: 10,
+        AB: 9,
+        BB: 8,
+        BC: 7,
+        CC: 6,
+        CD: 5,
+        DD: 4,
+      };
+      function getCG() {
+        let CSP204 = unit[document.getElementById("CSP204").value];
+        let CSP206 = unit[document.getElementById("CSP206").value];
+        let CSP208 = unit[document.getElementById("CSP208").value];
+        let CST202 = unit[document.getElementById("CST202").value] * 3;
+        let CST204 = unit[document.getElementById("CST204").value] * 3;
+        let CST206 = unit[document.getElementById("CST206").value] * 3;
+        let CST208 = unit[document.getElementById("CST208").value] * 3;
+        let CST210 = unit[document.getElementById("CST210").value] * 3;
+        let CG =
+          (CSP204 + CSP206 + CSP208 + CST202 + CST204 + CST206 + CST208 + CST210)/18;
+        window.alert('CG : ' + CG);
+      }
+    </script>
+  </body>
+</html>
