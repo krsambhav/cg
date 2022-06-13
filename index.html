@@ -18,81 +18,61 @@
   <body>
     <div class="main">
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CSP204 - Chetna LAB - 1 Credit</label>
+        <label for="exampleInputEmail1">HST202 - Preeti Bhatt - 3 Credits</label>
         <input
           type="text"
           class="form-control m-3"
-          id="CSP204"
+          id="HST202"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
       </div>
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CSP206 - DAA Lab - 1 Credit </label>
+        <label for="exampleInputEmail1">CST302 - Compiler Design Theory - 3 Credits </label>
         <input
           type="text"
           class="form-control m-3"
-          id="CSP206"
+          id="CST302"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
       </div>
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CSP208 - OS Lab - 1 Credit </label>
+        <label for="exampleInputEmail1">MAT302 - ITC - 3 Credits </label>
         <input
           type="text"
           class="form-control m-3"
-          id="CSP208"
+          id="MAT302"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
       </div>
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CST202 - SE - 3 Credit </label>
+        <label for="exampleInputEmail1">CSD300 - Lode Ka Project - 6 Credits </label>
         <input
           type="text"
           class="form-control m-3"
-          id="CST202"
+          id="CSD300"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
       </div>
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CST204 - CAO - 3 Credit </label>
+        <label for="exampleInputEmail1">HSP302 - Ruby - 1 Credit </label>
         <input
           type="text"
           class="form-control m-3"
-          id="CST204"
+          id="HSP302"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
       </div>
       <div class="form-group m-3">
-        <label for="exampleInputEmail1">CST206 - DAA - 3 Credit </label>
+        <label for="exampleInputEmail1">CD Lab - 2 Credits </label>
         <input
           type="text"
           class="form-control m-3"
-          id="CST206"
-          aria-describedby="emailHelp"
-          placeholder="Enter Grade"
-        />
-      </div>
-      <div class="form-group m-3">
-        <label for="exampleInputEmail1">CST208 - OS - 3 Credit </label>
-        <input
-          type="text"
-          class="form-control m-3"
-          id="CST208"
-          aria-describedby="emailHelp"
-          placeholder="Enter Grade"
-        />
-      </div>
-      <div class="form-group m-3">
-        <label for="exampleInputEmail1">CST210 - ILFM - 3 Credit </label>
-        <input
-          type="text"
-          class="form-control m-3"
-          id="CST210"
+          id="CDL"
           aria-describedby="emailHelp"
           placeholder="Enter Grade"
         />
@@ -125,16 +105,14 @@
         DD: 4,
       };
       function getCG() {
-        let CSP204 = unit[document.getElementById("CSP204").value];
-        let CSP206 = unit[document.getElementById("CSP206").value];
-        let CSP208 = unit[document.getElementById("CSP208").value];
-        let CST202 = unit[document.getElementById("CST202").value] * 3;
-        let CST204 = unit[document.getElementById("CST204").value] * 3;
-        let CST206 = unit[document.getElementById("CST206").value] * 3;
-        let CST208 = unit[document.getElementById("CST208").value] * 3;
-        let CST210 = unit[document.getElementById("CST210").value] * 3;
+        let HST202 = unit[document.getElementById("HST202").value] * 3;
+        let CST302 = unit[document.getElementById("CST302").value] * 3;
+        let MAT302 = unit[document.getElementById("MAT302").value] * 3;
+        let CSD300 = unit[document.getElementById("CSD300").value] * 6;
+        let HSP302 = unit[document.getElementById("HSP302").value];
+        let CDL = unit[document.getElementById("CDL").value] * 2;
         let CG =
-          (CSP204 + CSP206 + CSP208 + CST202 + CST204 + CST206 + CST208 + CST210)/18;
+          (HST202 + CST302 + MAT302 + CSD300 + HSP302 + CDL)/18;
         window.alert('CG : ' + CG);
       }
     </script>
